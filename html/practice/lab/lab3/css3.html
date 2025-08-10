@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML layout</title>
+    <style>
+        #black1 {
+            background-color: black;
+            width: 1050px;
+            color: black;
+            height: 40px;
+            display: flex;
+        }
+
+        #black2 {
+            background-color: black;
+            width: 1050px;
+            color: black;
+            height: 40px;
+            display: flex;
+            top: 11px;
+            position: relative;
+        }
+
+        #header {
+            background-color: red;
+            color: White;
+            font-size: large;
+            right: -180px;
+            top: 2px;
+            width: 700px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        #blue {
+            background-color: blue;
+            color: white;
+            font-size: large;
+            text-align: center;
+            width: 150px;
+            height: 289px;
+            top: 4px;
+            position: relative;
+            right: -180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #yellow {
+            background-color: yellow;
+            color: black;
+            position: relative;
+            display: flex;
+            top: 4px;
+            right: -187px;
+            width: 300px;
+            height: 289px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+        }
+
+        #green {
+            background-color: green;
+            color: white;
+            position: relative;
+            display: flex;
+            top: 5px;
+            right: -191px;
+            width: 239px;
+            height: 136px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #extra {
+            height: 148px;
+            width: 244px;
+            top: 9px;
+            right: -187px;
+            display: flex;
+            position: relative;
+            color: yellow;
+            background-color: yellow;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        #footer{
+            background-color: skyblue;
+            color: white;
+            height: 45px;
+            width: 701px;
+            display: flex;
+            position: relative;
+            top: 8px;
+            right: -180px;
+            text-align: center;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            font-size: large;
+        }
+        #flex {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="black1">black</div>
+    <div id="header">Header</div>
+    <div id="flex">
+        <div id="blue" align="center">Navigation</div>
+        <div id="yellow">Content</div>
+        <div>
+            <div id="green">Sidebar</div>
+            <div id="extra">extra</div>
+        </div>
+
+    </div>
+    <div id="footer">Footer</div>
+    <div id="black2">black</div>
+</body>
+
+</html>
