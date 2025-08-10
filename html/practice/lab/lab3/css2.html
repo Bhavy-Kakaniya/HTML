@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 2</title>
+    <style>
+        * {
+            padding: 2px;
+            margin: 0px;
+        }
+
+        #wind {
+            height: 50px;
+            width: auto;
+            margin-right: 800px;
+        }
+
+        #sidebar {
+            height: 25px;
+            width: 150px;
+            background-color: red;
+            text-align: center;
+            vertical-align: center;
+            margin-bottom: 2px;
+        }
+
+        #home {
+            background-color: red;
+            height: 50px;
+            width: 150px;
+            text-align: center;
+        }
+
+        #red {
+            background-color: red;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            height: 4px;
+            width: 150px;
+        }
+
+        .ab {
+            display: flex;
+        }
+
+        #img {
+            height: 60px;
+            width: 130px;
+        }
+
+        #c {
+            background-color: blue;
+        }
+
+        #copy {
+            background-color: blue;
+            width: 1143px;
+            color: white;
+            text-align: center;
+            height: 25px;
+            font-size: medium;
+        }
+
+        #flex {
+            display: flex;
+        }
+
+        #border {
+            border: 2px dotted black;
+            width: 1150px;
+        }
+
+        #placement {
+            background-color: red;
+            margin-top: 0px;
+            padding-top: 10px;
+            margin-bottom: 1px;
+            height: 30px;
+            width: 150px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #font {
+            font-size: small;
+            vertical-align: text-top;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="border">
+        <div style="display: flex; align-items: center;">
+            <img id="wind" src="https://tse4.mm.bing.net/th?id=OIP.3bP4vOS7ON4wTyqG1TenNgHaEK&pid=Api&P=0&h=180">
+            <span>Home &nbsp;&nbsp;&nbsp;&nbsp; About &nbsp;&nbsp;&nbsp;&nbsp; Contact &nbsp;&nbsp;&nbsp;&nbsp; Login
+                &nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+
+        <hr width="1150px" align="left">
+
+        <div>
+            <div style="display: flex;">
+
+                <div>
+                    <div id="sidebar">Sidebar</div>
+                    <div class="ab"></div>
+                    <div id="home">Home</div>
+                    <div id="red"></div>
+                </div>
+                <div style="display: flex;">
+                    <div>
+                        <img id="img" src="https://wallpapercave.com/wp/wp5156570.jpg">
+                        <div id="font">lamborgini</div>
+                    </div>
+                    <div>
+                        <img id="img" src="https://wallpapercave.com/wp/TpayTNx.jpg">
+                        <div id="font">mclaren</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="flex">
+
+                <div>
+                    <div id="placement">Placement</div>
+                    <div id="red"></div>
+                    <div id="sidebar">Recruitment</div>
+                    <div id="red"></div>
+                </div>
+
+                <div id="font" style="display: flex;">
+                    <div>
+                        <img id="img" src="https://tse2.mm.bing.net/th?id=OIP.X8Kulv3pHrdto8VHjTgqywHaEK&pid=Api&P=0&h=180">
+                        <div>Ferrari</div>
+                    </div>
+                    <div>
+                        <img id="img" src="https://tse1.mm.bing.net/th?id=OIP.Ddrn76R4x07_V3ZKJNbtywHaEK&pid=Api&P=0&h=180">
+                        <div>Bugati</div>
+                    </div>
+                    <div>
+                        <img id="img" src="https://tse3.mm.bing.net/th?id=OIP.cjUjzALkEKobv8G4Evr6GQHaEK&pid=Api&P=0&h=180">
+                        <div>venom</div>
+                    </div>
+                    <div>
+                        <img id="img" src="https://tse1.mm.bing.net/th?id=OIP.Ss2flNuFMo-WwUL8F4uBvAHaEK&pid=Api&P=0&h=180">
+                        <div>cheron</div>
+                    </div>
+                    <div>
+                        <img id="img" src="https://tse2.mm.bing.net/th?id=OIP.7E9HlMOarWISyMckmOj_EwHaEK&pid=Api&P=0&h=180">
+                        <div>R8</div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div style="margin: 0px 0px 0px 2px;">
+                <div id="sidebar">Faculty</div>
+                <div id="red"></div>
+                <div id="sidebar">News</div>
+                <div id="red"></div>
+                <div id="copy">&copy; Darshan University-Rajkot</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
