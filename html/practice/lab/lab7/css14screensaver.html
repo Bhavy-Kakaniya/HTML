@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient background</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #div1 {
+            margin-top: 7vh;
+            margin-left: 5vw;
+            height: 40vw;
+            width: 80vw;
+            background: linear-gradient(60deg, #3252f2, #e560dc, #ffb374, #ef5f5f, #d840b6);
+            background-size: 400% 400%;
+            animation: bg 12s ease infinite;
+        }
+
+        @keyframes bg {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+
+        .image-container {
+            display: inline-block;
+            border-radius: 12px;
+            padding: 10px;
+            /* Padding to create space for the border */
+            background: linear-gradient(60deg, orange, blue 20%, white 10%, green);
+            background-size: 300%;
+            position: relative;
+        }
+
+        .image-container::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 12px;
+            background: linear-gradient(60deg, orange, blue 20%, white 10%, green);
+            background-size: 300%;
+            filter: blur(8px);
+            /* Add glow effect */
+            opacity: 0.8;
+            animation: glowing-border 3s linear infinite;
+            z-index: -1;
+        }
+
+        .image-container img {
+            display: block;
+            border-radius: 12px;
+            width: 100%;
+            height: auto;
+        }
+
+        @keyframes glowing-border {
+            0% {
+                background-position: 0% 100%;
+                opacity: 0.8;
+            }
+
+            25% {
+                background-position: 100% 0%;
+                opacity: 1;
+            }
+
+            50% {
+                background-position: 200% 100%;
+                opacity: 0.8;
+            }
+
+            75% {
+                background-position: 100% 200%;
+                opacity: 1;
+            }
+
+            100% {
+                background-position: 0% 100%;
+                opacity: 0.8;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <div class="image-container"><img src="india_map.jpg" alt=""></div>
+</body>
+
+</html>
