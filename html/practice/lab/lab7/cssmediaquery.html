@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .border {
+            border: 2px dotted black;
+            height: auto;
+            width: auto;
+        }
+
+        img {
+            height: 60px;
+            width: 130px;
+        }
+
+        .link {
+            display: flex;
+            position: absolute;
+            right: 100px;
+            gap: 20px;
+        }
+
+        header {
+            display: flex;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .gap {
+            gap: 10px;
+        }
+
+        .red {
+            background-color: red;
+            width: 140px;
+            margin-bottom: 10px;
+            text-align: center;
+            height: 40px;
+        }
+
+        .pos {
+            position: absolute;
+            left: 180px;
+            top: 90px;
+        }
+
+        .blue {
+            background-color: blue;
+            text-align: center;
+            color: white;
+            padding-top: 10px;
+            margin-bottom: 5px;
+            height: 30px;
+        }
+
+        @media screen and (max-width:477px) {
+            .body {
+                width: auto;
+            }
+
+            .border {
+                border: 2px dotted black;
+                height: 2100px;
+            }
+
+            .link {
+                position: absolute;
+                right: 10px;
+                padding-right: 10px;
+            }
+
+            .side {
+                display: flex;
+                width: 0px;
+                margin-left: 10px;
+            }
+
+            .img12 {
+                padding-top: 100px;
+            }
+
+            .red { 
+                margin-left: 0px;
+                padding-top: 5px;
+                padding-right: 20px;
+                gap: 2px;
+                height: 30px;
+            }
+
+            .img1 {
+                height: 225px;
+                width: 300px;
+                padding-bottom: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .winimg {
+                height: 60px;
+                width: 130px;
+            }
+
+            .imgdown {
+                margin-bottom: 10px;
+            }
+
+            .flex {
+                flex-direction: column;
+            }
+
+            .imgspace {
+                margin-left: -95px;
+            }
+
+            .font {
+                position: relative;
+                right: -25px;
+                
+            }
+
+            .pos {
+                position: relative;
+                top: 15px;
+            }
+
+            .blue {
+                position: absolute;
+                top: 2050px;
+                width: 457px;
+            }
+
+            .top{
+                margin-top: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border">
+        <header>
+            <img class="windimg" src="https://tse4.mm.bing.net/th?id=OIP.3bP4vOS7ON4wTyqG1TenNgHaEK&pid=Api&P=0&h=180">
+            <div class="link">
+                <div>Home</div>
+                <div>About</div>
+                <div>Contact</div>
+                <div>Login</div>
+            </div>
+        </header>
+        <hr>
+        <main>
+            <div class="flex gap red1 img1">
+                <div>
+                    <div class="side">
+                        <div class="red">Sidebar</div>
+                        <div class="red">Home</div>
+                        <div class="red">Placement</div>
+                        <div class="red">Recruitment</div>
+                        <div class="red">Faculty</div>
+                        <div class="red">News</div>
+                    </div>
+
+                    <div class="pos">
+                        <div class="flex gap">
+                            <div>
+                                <div class="imgdown">
+                                    <img class="img1 imgspace" src="https://wallpapercave.com/wp/wp5156570.jpg">
+                                    <div class="font">lamborgini</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img class="img1 imgspace" src="https://wallpapercave.com/wp/TpayTNx.jpg">
+                                    <div class="font">mclaren</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex gap top">
+                            <div class="imgdown">
+                                <img class="img1 imgspace"
+                                    src="https://tse2.mm.bing.net/th?id=OIP.X8Kulv3pHrdto8VHjTgqywHaEK&pid=Api&P=0&h=180">
+                                <div class="font">Ferrari</div>
+                            </div>
+                            <div class="imgdown">
+                                <img class="img1 imgspace"
+                                    src="https://tse1.mm.bing.net/th?id=OIP.Ddrn76R4x07_V3ZKJNbtywHaEK&pid=Api&P=0&h=180">
+                                <div class="font">Ferrari</div>
+                            </div>
+                            <div class="imgdown">
+                                <img class="img1 imgspace"
+                                    src="https://tse3.mm.bing.net/th?id=OIP.cjUjzALkEKobv8G4Evr6GQHaEK&pid=Api&P=0&h=180">
+                                <div class="font">Ferrari</div>
+                            </div>
+                            <div class="imgdown">
+                                <img class="img1 imgspace"
+                                    src="https://tse1.mm.bing.net/th?id=OIP.Ss2flNuFMo-WwUL8F4uBvAHaEK&pid=Api&P=0&h=180">
+                                <div class="font">cheron</div>
+                            </div>
+                            <div class="imgdown">
+                                <img class="img1 imgspace"
+                                    src="https://tse2.mm.bing.net/th?id=OIP.7E9HlMOarWISyMckmOj_EwHaEK&pid=Api&P=0&h=180">
+                                <div class="font">Ferrari</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="blue">&copy; Darshan University-Rajkot</div>
+        </footer>
+    </div>
+</body>
+
+</html>
