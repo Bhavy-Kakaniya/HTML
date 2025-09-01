@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundAMP - Events</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: black;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #1E90FF;
+        }
+
+        .btn {
+            background-color: #1E90FF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .events {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px;
+        }
+
+        .event-card {
+            background-color: white;
+            color: black;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        .event-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .event-content {
+            padding: 15px;
+        }
+
+        .event-content h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .event-content p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .event-content .date {
+            font-size: 12px;
+            color: gray;
+            margin-bottom: 5px;
+        }
+
+        .btn-blue {
+            display: block;
+            text-align: center;
+            background-color: #1E90FF;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn-blue:hover {
+            background-color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2cpEie_1StBC9StORwlBl6sEouGOqhFvI0tpGyAmCjpao4y_P" alt="Logo"> SoundAMP
+        </div>
+        <nav class="menu">
+            <a href="#">HTML Templates</a>
+            <a href="#">More HTML Templates</a>
+        </nav>
+        <button class="btn">Download Now</button>
+    </header>
+
+    <section class="banner">
+        ALL EVENT
+        <img src="https://i1.sndcdn.com/visuals-000335822957-d2N7ig-t1240x260.jpg" alt="">
+    </section>
+
+    <section class="events">
+        <div class="event-card">
+            <img src="laser-show.jpg" alt="Night Laser Show">
+            <div class="event-content">
+                <p class="date">10/05/2018</p>
+                <h3>Night Laser Show</h3>
+                <p>#Hip-hop #R&B #Dance</p>
+                <p>We are happy to announce this special laser show.</p>
+                <a href="#" class="btn-blue">See more...</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="live-music.jpg" alt="Live Music">
+            <div class="event-content">
+                <p class="date">14/05/2018</p>
+                <h3>Live Music</h3>
+                <p>#Live #Rock #Alternative</p>
+                <p>Special event for our rock fans! Live music show.</p>
+                <a href="#" class="btn-blue">See more...</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="dj-class.jpg" alt="DJ Master Class">
+            <div class="event-content">
+                <p class="date">10/04/2018</p>
+                <h3>DJ - Master Class</h3>
+                <p>#DJ #Master-Class</p>
+                <p>DJ WoodSmell will teach you new tricks: please sign up.</p>
+                <a href="#" class="btn-blue">See more...</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <img src="night-party.jpg" alt="Best Night Party">
+            <div class="event-content">
+                <p class="date">10/04/2018</p>
+                <h3>Best Night Party</h3>
+                <p>#Party #Club</p>
+                <p>Our traditional event: best hits all night long.</p>
+                <a href="#" class="btn-blue">See more...</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
