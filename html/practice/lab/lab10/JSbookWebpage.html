@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: large;
+        }
+
+        #flex {
+            display: flex;
+            gap: 100px;
+        }
+
+        header {
+            background-color: rgb(36, 36, 36);
+            height: 80px;
+            width: 100%;
+            display: flex;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            background-color: rgb(240, 240, 240);
+            padding: 40px;
+        }
+
+        #cursive {
+            font-family: sans-serif;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 40px;
+            font-size: larger;
+        }
+
+        #box1 {
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 475px;
+            height: 550px;
+        }
+
+        #oreilly {
+            background-color: black;
+            margin-left: 10px;
+            color: white;
+            width: 100px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #desc {
+            width: 300px;
+            padding-top: 10px;
+            margin-left: 40px;
+        }
+
+        #kyle {
+            padding-top: 10px;
+            font-size: larger;
+            text-align: right;
+            font-family: cursive;
+        }
+
+        #complete {
+            background-color: white;
+            height: 130px;
+            font-size: 56px;
+            font-family: sans-serif;
+            text-align: right;
+            padding: 15px;
+        }
+
+        #js {
+            background-color: rgb(255, 225, 0);
+            font-size: 250px;
+            height: 275px;
+            font-family: sans-serif;
+            padding-right: 20px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        #you {
+            position: relative;
+            top: -311px;
+            right: -11px;
+            rotate: -90deg;
+            color: rgb(255, 225, 0);
+        }
+
+        #box {
+            display: flex;
+            gap: 400px;
+        }
+
+        #box2 {
+            font-family: sans-serif;
+            word-spacing: 3px;
+        }
+
+        .spacing {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 40px;
+            font-size: larger;
+        }
+
+        #copy {
+            background-color: rgb(255, 149, 0);
+            height: 50px;
+            width: 300px;
+            margin-left: 100px;
+            color: white;
+            font-size: large;
+            padding-top: 0px;
+            border-radius: 9px;
+            font-family: cursive;
+            text-align: center;
+            border: none;
+        }
+
+        footer {
+            background-color: rgb(36, 36, 36);
+            height: 100px;
+            width: 100%;
+            font-family: sans-serif;
+            color: white;
+            display: inline-block;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            padding-top: 40px;
+        }
+        #find{
+            margin-top: 10px;
+            background-color: rgb(255, 119, 0);
+            width: 400px;
+            height: 30px;
+            font-size: 90%;
+            border-radius: 5px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="flex">
+            <div>The book Series</div>
+            <div>Testimonials</div>
+            <div>The author</div>
+            <div>Free resources</div>
+        </div>
+    </header>
+    <main>
+        <div id="cursive">You dont know JavaScript</div>
+        <div id="box">
+            <div id="box1">
+                <div style="display: flex;">
+                    <div id="oreilly">O'REILLY</div>
+                    <div id="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat expedita deserunt
+                        adipisci nihil debitis totam consectetur
+                        <div id="kyle">KYLE SIMPSON</div>
+                    </div>
+                </div>
+                <div id="complete">COMPLETE SERIES</div>
+                <div id="js">JS</div>
+                <div id="you">YOU DON'T KNOW</div>
+            </div>
+            <div id="box2">
+                <div class="spacing">Dont just drift through JavaScript</div>
+                <div class="spacing">Understand how JavaScript works</div>
+                <div class="spacing">Start your journey through bumpy side of JavaScript</div>
+                <button id="copy">ORDER YOUR COPY NOW</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>The first ebook in the series is absolutely free</div>
+        <div id="find">FIND OUT MORE ABOUT THIS OFFER</div>
+    </footer>
+</body>
+
+</html>
