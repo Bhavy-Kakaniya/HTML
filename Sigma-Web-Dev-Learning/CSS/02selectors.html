@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>selector</title>
+            <!-- element selector -->
+            <style>
+                div {
+                    background-color: red;
+                    color: blue;
+                }
+            /* class selector */
+                .red {
+                    color: red;
+                    background-color: green;
+                }
+            /* id selector */
+                #green {
+                    color: orange;
+                    background-color: blue;
+                }
+            /* child selector p tag should present in div */
+            div > p {
+                color: pink;
+                background-color: yellow;
+            }
+            /* descendent selector implies to p tag anywhere in this div*/
+            div p {
+                color: white;
+                background-color: red;
+            }
+            /* universal selector */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            /* pseudo selector */
+            a:visited{
+                color: rgb(0, 255, 55);
+            }
+            a:link{
+                color: red;
+            }
+            a:active{
+                color:rgb(255, 251, 0);
+            }
+            a:hover{
+                background-color: orange;
+            }
+            </style>
+    </head>
+
+    <body>
+        <div>hello</div>
+        <div class="red">hello</div>
+        <div id="green">hello</div>
+        <div class="red"><p>hello</p></div>
+        <a href="https://google.com">go to google</a>
+        <a href="htpps://facebook.com">click here</a>
+    </body>
+    
+</html>
