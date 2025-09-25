@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity and cascade</title>
+    <style>
+        #red{
+            color: red !important;/*important will give the highest priority*/
+        }
+    </style>
+</head>
+
+<body>
+    <p>inline > id > class > universal</p>
+    <p>style written at bottom will be displayed</p>
+</body>
+
+</html>
