@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadows and outlines</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 15px 5px red;/*click on inspect then right click on the box and inspect then in written code click on 3d square and then change x and y offset as required*/
+        }
+        .text {
+            text-shadow: 2px 2px 4px rgb(255, 0, 0);
+            outline: 10px solid rgb(119, 58, 58);
+            outline-offset: 100px;/*can change border directly while in border we need to change margin and padding */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">hello</div>
+    <br><br>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, et.</div>
+</body>
+
+</html>
