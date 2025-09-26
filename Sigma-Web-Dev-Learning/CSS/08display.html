@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* mxln web docs */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;/*to overcome display inline margin / padding top problem use display inline block */
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+            text-align: center;
+            visibility: hidden ;/*hides content*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">hello world 1</div>
+    <div class="box">hello world 2</div>
+    <span>hello world 3</span>
+    <span>hello world 4</span>
+</body>
+
+</html>
