@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box::first-line {
+            background-color: green;
+        }
+        img, a, .box [data-color="primary"]{
+            padding-top: 45px;
+        }
+        :nth-child(even){
+            background-color: blue;
+        }
+        .boxes::before{
+            content: hello;
+            color: aqua;
+        }
+        .boxes::after{
+            content: this is after;
+        }
+        input::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Hey I am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus illo illum
+            nihil quidem tempore blanditiis nulla. Vitae necessitatibus sit dolores, modi voluptatem aperiam culpa,
+            dolorum eius cupiditate aliquam optio dolore ab autem neque doloremque velit voluptatibus soluta fugit
+            inventore, ut et a! Omnis vitae molestiae sunt, minus ducimus magni iste dignissimos, commodi esse,
+            voluptatibus reiciendis ipsum? Perferendis dolorum aliquid quod minus repellendus ab recusandae deserunt
+            suscipit similique porro dolore ipsam eveniet illum, sit fugit iure placeat voluptatem inventore quibusdam.
+            Quam non vel est quis provident. Voluptas officia saepe consectetur, deleniti eveniet numquam ea dolorum
+            assumenda eum voluptatibus officiis facilis. Quia!</div>
+            
+        <div class="box">Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <input type="text" placeholder="enter name">
+    </div>
+</body>
+
+</html>
