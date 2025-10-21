@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+    <style>
+        .container {
+            background-color: rgb(35, 255, 255);
+            height: 1000px;
+            width: 100%;
+            animation-name: bhavy2;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            background-color: rgb(225, 0, 255);
+            animation-name: bhavy;
+            animation-name: bhavy2;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-direction: reverse;
+            /* animation-play-state: paused; */
+        }
+
+        @keyframes bhavy {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: rgb(0, 238, 255);
+                transform: translateX(1000px);
+            }
+        }
+
+        @keyframes bhavy1 {
+            10% {
+                background-color: red;
+            }
+
+            20% {
+                background-color: rgb(111, 255, 0);
+            }
+
+            30% {
+                background-color: green;
+            }
+
+            40% {
+                background-color: rgb(0, 4, 255);
+            }
+
+            50% {
+                background-color: violet;
+            }
+
+            60% {
+                background-color: orange;
+            }
+        }
+
+        @keyframes bhavy2 {
+            10% {
+                background-color: orange;
+            }
+
+            20% {
+                background-color: red;
+            }
+
+            30% {
+                background-color: rgb(111, 255, 0);
+            }
+
+            40% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: rgb(0, 4, 255);
+            }
+
+            60% {
+                background-color: violet;
+            }
+
+        }
+
+        @keyframes bhavy3 {
+            10% {
+                background-color: violet;
+            }
+
+            20% {
+                background-color: orange;
+            }
+
+            30% {
+                background-color: red;
+            }
+
+            40% {
+                background-color: rgb(111, 255, 0);
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            60% {
+                background-color: rgb(0, 4, 255);
+            }
+
+        }
+
+        @keyframes bhavy4 {
+            10% {
+                background-color: rgb(0, 4, 255);
+            }
+
+            20% {
+                background-color: violet;
+            }
+
+            30% {
+                background-color: orange;
+            }
+
+            40% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: rgb(111, 255, 0);
+            }
+
+            60% {
+                background-color: green;
+            }
+
+        }
+
+        #box1 {
+            height: 250px;
+            width: 25%;
+            animation-name: bhavy1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        #box2 {
+            height: 250px;
+            width: 25%;
+            animation-name: bhavy2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        #box3 {
+            height: 250px;
+            width: 25%;
+            animation-name: bhavy3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        #box4 {
+            height: 250px;
+            width: 25%;
+            animation-name: bhavy4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="box">
+                box
+            </div>
+        </div>
+    </div>
+    <div style="display: flex;">
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </div>
+    <div style="display: flex;">
+        <div id="box3"></div>
+        <div id="box4"></div>
+    </div>
+</body>
+
+</html>
