@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FILTERS</title>
+    <style>
+        img {
+            height: 150px;
+            width: 300px;
+        }
+
+        .img1 {
+            filter: brightness(120%) contrast(2);
+        }
+
+        .img2 {
+            filter: invert(1) opacity(0.5);
+        }
+
+        .img3 {
+            filter: grayscale(10);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1" src="https://wallpapercave.com/wp/wp7664856.png">
+        <img class="img2" src="https://wallpapercave.com/wp/wp7664856.png">
+        <img class="img3" src="https://wallpapercave.com/wp/wp7664856.png">
+    </div>
+</body>
+
+</html>
